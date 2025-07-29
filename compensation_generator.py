@@ -21,7 +21,7 @@ with st.form("comp_form"):
         )
     with col2:
         selected_years = st.multiselect(
-            "Years", ["2022", "2023", "2024"]
+            "Years", ["2022", "2023"]
         )
     
     repeat = st.number_input("Repeat", min_value=1, value=1, step=1)
