@@ -3,9 +3,12 @@ import pandas as pd
 
 # Taxonomy mapping
 taxonomy_map = {
-    "Salary": "Fees Earned or Paid in Cash",
-    "Bonus": "Non-Equity Incentive Plan Compensation",
+    "Fees Earned or Paid in Cash": "Salary",
+    "Salary":"Salary",
+    "Bonus": "Bonus",
+   "Non-Equity Incentive Plan Compensation" :"Non-Equity Incentive Plan Compensation",
     "Stock Awards": "Stock Awards",
+    "Option Awards" :"Option Awards",
     "Other Compensation": "All Other Compensation",
     "Total": "Total Compensation"
 }
