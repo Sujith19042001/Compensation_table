@@ -7,7 +7,7 @@ taxonomy_map = {
     "Salary":"Salary",
     "Bonus": "Bonus",
    "Non-Equity Incentive Plan Compensation" :"Non-Equity Incentive Plan Compensation",
-   "CHANGE IN PENSION VALUE AND NONQUALIFIED DEFERRED COMPENSATION EARNINGS" :"CHANGE IN PENSION VALUE AND NONQUALIFIED DEFERRED COMPENSATION EARNINGS" 
+   "CHANGE IN PENSION VALUE AND NONQUALIFIED DEFERRED COMPENSATION EARNINGS" :"CHANGE IN PENSION VALUE AND NONQUALIFIED DEFERRED COMPENSATION EARNINGS", 
     "Stock Awards": "Stock Awards",
     "Option Awards" :"Option Awards",
     "Other Compensation": "All Other Compensation",
