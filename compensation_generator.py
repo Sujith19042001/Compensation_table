@@ -50,4 +50,4 @@ if submitted:
     
     df = pd.DataFrame(records)
     st.write("### Generated Table")
-    st.table(df)
+    st.dataframe(df, use_container_width=True)
