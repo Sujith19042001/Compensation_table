@@ -7,14 +7,17 @@ taxonomy_map = {
     "Salary":"Salary",
     "Bonus": "Bonus",
    "Non-Equity Incentive Plan Compensation" :"Non-Equity Incentive Plan Compensation",
-   "CHANGE IN PENSION VALUE AND NONQUALIFIED DEFERRED COMPENSATION EARNINGS" :"CHANGE IN PENSION VALUE AND NONQUALIFIED DEFERRED COMPENSATION EARNINGS", 
+   "Change in pension value and nonqualified deferred compensation earnings" :"Change in pension value and nonqualified deferred compensation earnings", 
     "Stock Awards": "Stock Awards",
     "Option Awards" :"Option Awards",
-    "Other Compensation": "All Other Compensation",
-    "Total": "Total Compensation"
+    "Other Compensation": "Other Compensation",
+    "All Other Compensation":"Other Compensation",
+    "Total": "Total Compensation",
+    "Total Compensation" : "Total Compensation"
+
 }
 
-st.title("Compensation Entry Generator")
+st.title("Compensation Table Generator")
 
 # Sidebar or main controls
 with st.form("comp_form"):
@@ -25,7 +28,7 @@ with st.form("comp_form"):
         )
     with col2:
         selected_years = st.multiselect(
-            "Years", ["2022", "2023"]
+            "Years", ["2024","2023","2022","2021"]
         )
     
     repeat = st.number_input("Repeat", min_value=1, value=1, step=1)
@@ -40,7 +43,6 @@ if submitted:
             for param in selected_params:
                 taxonomy = taxonomy_map.get(param, "Unknown")
                 records.append({
-                    "Executive": "",
                     "Parameter": param,
                     "Year": year,
                     "Taxonomy": taxonomy
