@@ -37,7 +37,6 @@ with st.form("comp_form"):
 # Table generation
 if submitted:
     records = []
-    selected_years.sort()
     for r in range(repeat):
         for year in selected_years:
             for param in selected_params:
